@@ -1,9 +1,12 @@
 /* Variables */
 
 :root {
-    --black: #000000;
-    --orange: #9C6E28;
-    --lightOrange: #A87E40;
-    --brown: #66481F;
+    --black: #231F20;
     --white: #ffffff;
+    --pink: #EC008C;
+    --gray: #939598;
+    --liteGray: #E6E7E8;
+    --blue: #00AEEF;
+    --orange: #FF5A00;
+    --cyan: #00AA88;
 }

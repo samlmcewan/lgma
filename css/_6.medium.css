@@ -3,44 +3,19 @@
 @media (min-width: 768px) {
     .top-bar .col {
         width: fit-content!important;
+        background-color: var(--white);
+    }
+    .top-bar .col a .mail {
+        color: var(--black);
+        margin-bottom: -0.3rem;
+    }
+    .top-bar .col a svg {
+        margin-top: -0.1rem;
     }
     .top-bar .container {
         margin-right: calc(var(--bs-gutter-x)* .5);;
     }
-    .hero {
-        height: 28rem;
+    #main-nav .logo-top {
+        margin-bottom: -1.75rem;
     }
-    .hero-text-container .hero-sub {
-        width: 50%;
-        margin-left: auto;
-    }
-    .hero-text-container {
-        top: 2.5rem;
-        right: 2rem;
-        transform: translate(0, 0);
-        width: fit-content;
-    }
-    .hero-text-container .hero-text {
-        width: fit-content;
-    }
-    .hero-text-container .hero-sub {
-        width: 70%;
-    }
-    .hero .hero-brown {
-        right: -4.5rem;
-    }
-    .key-features-section-title .title-contain {
-        padding: 1.75rem 1.25rem;
-        margin-top: -3rem;
-    }
-    .key-features-section-title h2 {
-        font-size: 2.5rem;
-        padding-left: .5rem;
-        padding-right: .5rem;
-    }
-
-    .other-services a.card .title {
-        font-size: 1rem;
-    }
-    
 }

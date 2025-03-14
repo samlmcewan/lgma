@@ -3,19 +3,16 @@
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-/* @font-face {
-    font-family: 'Agenda';
-    src: url('/font/Agenda-MediumCondensed.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+body {
+    font-family: "Barlow", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Agenda';
-    src: url('/font/Agenda-Black.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
-} */
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
@@ -57,20 +54,34 @@ section {
   padding: 0!important;
 }
 .top-bar .col {
-    background-color: var(--orange);
+    background-color: var(--black);
 }
 .top-bar .col a {
     color: var(--white);
     text-decoration: none;
 }
+.top-bar .mail {
+    color: var(--white);
+}
+
 /*--------------------------------------------------------------
 # Main Navigation
 --------------------------------------------------------------*/
+#main-nav .active .b-w-svg g polyline {
+    fill: var(--black)!important;
+}
+#main-nav .active .b-w-svg g polyline {
+    fill: var(--white)!important;
+}
 .navbar-toggler {
     border: none;
 }
 #main-nav .active {
-    background-color: var(--black);
+    background-color: var(--cyan);
+    border-color: var(--cyan);
+}
+#main-nav .active + li.nav-item {
+    border-top: thin solid var(--white);
 }
 #main-nav a {
     color: var(--black);
@@ -98,6 +109,9 @@ section {
     padding-left: calc(var(--bs-gutter-x) * .5);
     padding-right: calc(var(--bs-gutter-x) * .5);
 }
+#main-nav .site-logo-top {
+    margin-bottom: 1rem;
+}
 
 .navbar-nav .nav-item, .navbar ul li:first-child:not(.dropdown ul li) {
     padding: .9rem calc(var(--bs-gutter-x) * .5);
@@ -112,7 +126,7 @@ section {
     padding: 0 calc(var(--bs-gutter-x) * .5);
 }
 #main-nav .navbar-nav .nav-item:last-of-type {
-    border-bottom: thin solid var(--lightGray);
+    border-bottom: thin solid var(--black);
 }
 
 /* Collapse Button Mobile */
@@ -203,7 +217,8 @@ section {
 
 #main-nav .logo-top {
     padding-left: calc(var(--bs-gutter-x)* .5);
-    width: 14rem;
+    width: 100%;
+    margin-bottom: -1.2rem;
 }
 
 

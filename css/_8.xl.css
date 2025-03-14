@@ -1,6 +1,12 @@
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
+    #main-nav .active .b-w-svg g polyline {
+        fill: var(--black)!important;
+    }
+    #main-nav .active .b-w-svg g polyline {
+        fill: var(--cyan)!important;
+    }
     .top-bar .bar a, .top-bar .bar p {
         font-size: 1.5rem;
     }
@@ -60,57 +66,10 @@
 #main-nav .logo-top {
     width: 20rem;
 }
-
-.hero {
-    height: 50rem;
-}
-
-.hero-text-container {
-    top:8rem;
-}
-
-.hero-text-container .hero-text p {
-    font-size: 3.5rem;
-    /* font-size: 5rem; */
-}
-.hero-text-container .hero-sub p {
-    font-size: 1.75rem;
-    margin-top: 1rem;
-}
-.hero .btn-outline {
-    font-size: 2.3rem;
-    margin-top: 1rem;
-}
-.hero .hero-brown {
-    right: -8rem;
-}
-.key-features-section-title .title-contain {
-    padding: 2.5rem 1.5rem;
-    margin-top: -4rem;
-}
-.key-features-section-title h2 {
-    font-size: 5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-.section-title {
-    font-size: 5rem;
-}
-.get-in-touch .col {
-    padding-left: 4rem!important;
-    padding-right: 4rem!important;
-}
-.get-in-touch p {
-    font-size: 2.5rem;
-}
-.section-title h2 {
-    font-size: 5rem;
-}
-.advertise .section-title {
-    margin-top: 9rem;
-}
-.advertise .title-sub {
-    margin-bottom: 12rem;
+#main-nav .nav-item a svg {
+    /*width: 1rem;*/
+    width: 1.5rem;
+    margin-top: -0.3rem;
 }
 .shfooter .collapse {
     display: block;
@@ -148,9 +107,7 @@
         width: 80%;
     }
 
-    .other-services a.card .title {
-        font-size: 1.25rem;
-    }
+
 
 }
         
