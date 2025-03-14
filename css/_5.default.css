@@ -251,12 +251,20 @@ a.members-login {
     text-transform: uppercase;
     transform: rotate(90deg);
     transform-origin: right top;
+    transition: all .3s;
     white-space: nowrap;
 }
 a.members-login span {
     color: var(--white);
+    transition: all .3s;
 }
-
+a.members-login:hover {
+    background-color: var(--pink);
+    color: var(--black);
+}
+a.members-login:hover span {
+    color: var(--black);
+}
 .hero {
     background-color: var(--orange);
     position: relative;
