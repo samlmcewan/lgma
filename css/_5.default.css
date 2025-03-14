@@ -7,6 +7,7 @@ body {
     font-family: "Barlow", sans-serif;
     font-size: 1.125rem;
     font-weight: 400;
+    position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -235,8 +236,27 @@ z-index: 9;
 }
 
 /*--------------------------------------------------------------
-# Hero
+# Members Login Button
 --------------------------------------------------------------*/
+a.members-login {
+    background-color: var(--black);
+    color: var(--pink);
+    font-weight: 600;
+    position: fixed;
+    right: 0;
+    top: 19rem;
+    z-index: 999999;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    transform-origin: right top;
+    white-space: nowrap;
+}
+a.members-login span {
+    color: var(--white);
+}
+
 .hero {
     background-color: var(--orange);
     position: relative;

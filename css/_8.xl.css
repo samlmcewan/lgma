@@ -7,6 +7,9 @@
     #main-nav .active .b-w-svg g polyline {
         fill: var(--cyan)!important;
     }
+    .top-bar {
+        margin-top: 2rem;
+    }
     .top-bar .bar a, .top-bar .bar p {
         font-size: 1.5rem;
     }
@@ -46,31 +49,33 @@
 .navbar-collapse {
     border-bottom: unset;
 }
-#main-nav .nav-item a:after {
-    content: '';
-    height: 100%;
-    border-right: 2px solid var(--brown);
-    margin-left: calc(var(--bs-gutter-x)* .5);
-    padding-right: .5rem;
-    margin-right: .25rem;
-}
-#main-nav .nav-item:last-of-type a:after {
-    border-right: 0;
-}
+    #main-nav .nav-item .nav-link {
+        padding: 1rem 1.5rem;
+    }
+    #main-nav .nav-item:last-of-type .nav-link {
+        /*border-right: 0;*/
+        /*margin-right: 0;*/
+        padding-right: 0;
+    }
 .navbar-nav .nav-item, .navbar ul li:first-child:not(.dropdown ul li) {
     border: unset;
 }
 .nav-outer {
     margin-top: -2rem!important;
 }
-#main-nav .logo-top {
-    width: 20rem;
-}
+    #main-nav .logo-top {
+        width: 30rem;
+    }
 #main-nav .nav-item a svg {
     /*width: 1rem;*/
     width: 1.5rem;
     margin-top: -0.3rem;
 }
+    a.members-login {
+        top: 13rem;
+    }
+
+
 .shfooter .collapse {
     display: block;
     }
