@@ -1,0 +1,156 @@
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .top-bar .bar a, .top-bar .bar p {
+        font-size: 1.5rem;
+    }
+
+    .logo-top {
+        width: 200px;
+    }
+    #main-nav .active a {
+        color: var(--orange);
+   }
+   #main-nav .active {
+    background-color: unset;
+}
+#main-nav .nav-item {
+    padding-left: 0;
+    padding-right: 0;
+}
+#main-nav .nav-item .nav-link {
+    padding-right: 0;
+    padding-left: 1rem;
+}
+
+#main-nav .nav-item:hover a{
+    opacity: .98;
+}
+#main-nav .nav-item.dropdown ul li a:hover {
+    color: var(--yellow);
+    background-color: transparent!important;
+}
+.navbar-nav .nav-item, .navbar ul li:first-child, #main-nav .navbar-nav .nav-item:last-of-type {
+    border: none;
+}
+
+#main-nav .nav-item:hover a {
+    color: var(--orange);
+}
+.navbar-collapse {
+    border-bottom: unset;
+}
+#main-nav .nav-item a:after {
+    content: '';
+    height: 100%;
+    border-right: 2px solid var(--brown);
+    margin-left: calc(var(--bs-gutter-x)* .5);
+    padding-right: .5rem;
+    margin-right: .25rem;
+}
+#main-nav .nav-item:last-of-type a:after {
+    border-right: 0;
+}
+.navbar-nav .nav-item, .navbar ul li:first-child:not(.dropdown ul li) {
+    border: unset;
+}
+.nav-outer {
+    margin-top: -2rem!important;
+}
+#main-nav .logo-top {
+    width: 20rem;
+}
+
+.hero {
+    height: 50rem;
+}
+
+.hero-text-container {
+    top:8rem;
+}
+
+.hero-text-container .hero-text p {
+    font-size: 3.5rem;
+    /* font-size: 5rem; */
+}
+.hero-text-container .hero-sub p {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+}
+.hero .btn-outline {
+    font-size: 2.3rem;
+    margin-top: 1rem;
+}
+.hero .hero-brown {
+    right: -8rem;
+}
+.key-features-section-title .title-contain {
+    padding: 2.5rem 1.5rem;
+    margin-top: -4rem;
+}
+.key-features-section-title h2 {
+    font-size: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.section-title {
+    font-size: 5rem;
+}
+.get-in-touch .col {
+    padding-left: 4rem!important;
+    padding-right: 4rem!important;
+}
+.get-in-touch p {
+    font-size: 2.5rem;
+}
+.section-title h2 {
+    font-size: 5rem;
+}
+.advertise .section-title {
+    margin-top: 9rem;
+}
+.advertise .title-sub {
+    margin-bottom: 12rem;
+}
+.shfooter .collapse {
+    display: block;
+    }
+    footer .fa-chevron-right {
+    display: inline-block;
+    }
+    footer ul li {
+    margin-bottom: 10px;
+    
+    }
+    footer ul li span {
+        display: inline-block;
+    }
+    footer ul li a:hover span {
+        animation: arrow-right 0.3s linear forwards; 
+              
+          }
+      
+      @keyframes arrow-right {
+        from {
+          transform: translateX(0px); }
+        to {
+          transform: translateX(2px); } 
+          
+      }
+    
+      #footer .footer-title {
+        font-size: 1.5rem;
+      }
+      footer .logo-footer {
+        width: 100%;
+      }
+      footer .logo-footer img {
+        width: 80%;
+    }
+
+    .other-services a.card .title {
+        font-size: 1.25rem;
+    }
+
+}
+        

@@ -1,0 +1,54 @@
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .hero {
+        height: 30rem;
+    }
+    .hero .btn-outline {
+        font-size: 1.5rem;
+    }
+    .hero-text-container {
+        top: 4rem;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        padding-right: 5rem;
+    }
+    .hero-text-container .hero-text p {
+        font-size: 2.7rem;
+    }
+    .hero-text-container .hero-sub p {
+        font-size: 1.125rem;
+    }
+    .hero .hero-brown {
+        right: -5rem;
+    }
+    .about-us .container p {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .key-features-section-title .title-contain {
+        padding: 2rem 1.5rem;
+    }
+    .key-features-section-title h2 {
+        font-size: 3.5rem;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .section-title h2 {
+        font-size: 3.5rem;
+    }
+    .get-in-touch p {
+        font-size: 2rem;
+    }
+    .advertise .section-title {
+        margin-top: 7rem;
+    }
+    .advertise .title-sub {
+        margin-bottom: 9rem;
+    }
+    
+    
+}
