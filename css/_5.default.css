@@ -112,6 +112,7 @@ section {
 }
 #main-nav .site-logo-top {
     margin-bottom: 1rem;
+    max-width: 70vw;
 }
 
 .navbar-nav .nav-item, .navbar ul li:first-child:not(.dropdown ul li) {
@@ -227,9 +228,9 @@ section {
     padding: 1rem calc(var(--bs-gutter-x) * .5);
 }
 
-#main-nav .nav-item.active ul {
-    background-color: var(--green)!important;
-}
+/*#main-nav .nav-item.active ul {*/
+/*    background-color: var(--green)!important;*/
+/*}*/
 
 #main-nav {
 z-index: 9;
@@ -244,7 +245,7 @@ a.members-login {
     font-weight: 600;
     position: fixed;
     right: 0;
-    top: 19rem;
+    top: 30rem;
     z-index: 999999;
     padding: 1rem;
     text-decoration: none;
@@ -265,30 +266,14 @@ a.members-login:hover {
 a.members-login:hover span {
     color: var(--black);
 }
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
 .hero {
     background-color: var(--orange);
     position: relative;
-    height: 26rem;
+    /*height: 26rem;*/
     overflow: hidden;
-
-}
-.hero .hero-divider {
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-}
-.hero .hero-brown {
-    position: absolute;
-    z-index: 1;
-    height: 110%;
-    right: -4.5rem;
-    top: -10%;
-}
-.hero .hero-img-container {
-    position: relative;
-    height: 100%;
-    /* overflow: hidden; */
-    width: 50%;
 }
 .hero .hero-img {
     position: absolute;
@@ -304,52 +289,13 @@ a.members-login:hover span {
     opacity: 1;
     z-index: 1;
   }
-
-.hero-text-container {
+.hero .hero-svg {
+    position: relative;
     z-index: 9;
-    position: absolute;
-    top: 1.5rem;
-    /* right: 50%; */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-}
-.hero-text-container .hero-text {
-    padding: 1.25rem 1.25rem;
-    background-color: var(--black);
-    color: var(--white);
-    display: flex;
-    justify-content: center;
-}
+    width: 120%;
+    margin-left: -2rem;
 
-.hero-text-container .hero-text:nth-child(1) {
-    margin-bottom: 1rem;
-}
-
-.hero-text-container .hero-text p {
-    margin: 0;
-    font-size: 1.8rem;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.hero-text-container .hero-sub {
-    width: 50%;
-    margin-left: auto;
-    margin-top: 1rem;
-}
-
-.hero-text-container .hero-sub .hero-sub-text {
-    color: var(--white);
-}
-.hero .btn-outline {
-    background-color: var(--orange);
-}
-
-.hero .btn-outline:active, .hero .btn-outline:focus, .hero .btn-outline:hover {
-    background-color: var(--black);
-    color: var(--orange);
-    cursor: pointer;
+    margin-bottom: 15rem;
 }
 
 /*--------------------------------------------------------------

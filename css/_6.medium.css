@@ -18,4 +18,10 @@
     #main-nav .logo-top {
         margin-bottom: -1.75rem;
     }
+    a.members-login {
+        top: 18rem;
+    }
+    .hero .hero-svg {
+        margin-bottom: 21rem;
+    }
 }

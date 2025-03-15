@@ -62,6 +62,7 @@
 }
 .nav-outer {
     margin-top: -2rem!important;
+    max-width: 1320px;
 }
     #main-nav .logo-top {
         width: 30rem;
@@ -73,6 +74,14 @@
 }
     a.members-login {
         top: 13rem;
+    }
+.hero {
+    height: 80vh;
+}
+    .hero .hero-svg {
+        position: absolute;
+        right: -5rem;
+        width: 80%;
     }
 
 

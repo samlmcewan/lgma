@@ -1,16 +1,19 @@
 /* Extra large devices (large desktops, 1400px and up) */
 
 @media only screen and (min-width: 1400px) {
-    .advertise .section-title {
-        margin-top: 11rem;
+    .hero {
+        height: 65vh;
     }
-    .advertise .title-sub {
-        margin-bottom: 14rem;
-    }
+
 }
 
 @media only screen and (min-width: 1900px) {
-    .hero-text-container .hero-text p {
-        font-size: 5rem;
+    .hero {
+        height: 70vh;
+    }
+    .hero .hero-svg {
+        position: absolute;
+        right: -5rem;
+        width: 60%;
     }
 }
