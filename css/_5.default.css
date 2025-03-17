@@ -30,9 +30,9 @@ a.btn.btn-outline {
 section {
     overflow: hidden;
 }
-.section-title {
-    margin-top: 1rem;
-}
+/*.section-title {*/
+/*    margin-top: 1rem;*/
+/*}*/
 .section-title .row .col {
     text-align: center;
 }
@@ -64,6 +64,9 @@ section {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 0;
+}
+.gray-svg {
+    width: 100%;
 }
 /*--------------------------------------------------------------
 # Top Bar
@@ -269,8 +272,10 @@ a.members-login {
     text-transform: uppercase;
     transform: rotate(90deg);
     transform-origin: right top;
-    transition: all .3s;
     white-space: nowrap;
+    transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
 }
 a.members-login span {
     color: var(--white);
@@ -405,6 +410,65 @@ a.members-login:hover span {
     background-color: #000000;
 }
 
+/*--------------------------------------------------------------
+# Events
+--------------------------------------------------------------*/
+.events .content {
+    background-color: var(--liteGray);
+}
+.events .event {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.events .event .event-date {
+    width: 30%;
+}
+.events .event .event-date p {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.events .event .event-date span {
+    display: block;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: -1rem;
+}
+.events .event-details {
+    padding-left: 1.125rem;
+}
+.events .event-title {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.events .event-sub {
+    margin-bottom: 0;
+}
+.events .event-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+.events .event-footer p {
+    margin-bottom: 0;
+}
+.events .on-sale {
+    font-size: .875rem;
+}
+.events a.event-buy {
+    color: var(--black);
+    margin-top: .5rem;
+}
+.events a.event-buy:hover {
+    color: var(--pink);
+}
+
     /*--------------------------------------------------------------
     # Footer
     --------------------------------------------------------------*/
@@ -438,7 +502,7 @@ footer#footer {
 
         footer a:hover {
             /* text-decoration: underline; */
-            color: var(--brown);
+            /*color: var(--brown);*/
         }
 
             

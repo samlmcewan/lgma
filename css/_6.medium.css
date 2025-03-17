@@ -24,4 +24,22 @@
     .hero .hero-svg {
         margin-bottom: 21rem;
     }
+    .events .event .event-date {
+        width: 15%;
+    }
+    .events .event-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: start;
+    }
+    .events .event-footer p {
+        margin-right: 1rem;
+    }
+    .events .event-details {
+        padding-left: 1rem;
+    }
+    .events a.event-buy {
+        margin-top: 0;
+    }
 }

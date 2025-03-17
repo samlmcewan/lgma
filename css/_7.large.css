@@ -4,7 +4,30 @@
     .hero .hero-svg {
         margin-bottom: 29rem;
     }
+    .events .event .event-date {
+        width: unset;
+        margin-right: 1rem;
+    }
+    .events .event .event-date p {
+        font-size: 5rem;
+    }
+    .events .event .event-date span {
+        font-size: 1.25rem;
+    }
+    .events .event-details {
+        padding-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 1.5rem;
+    }
+    .events .event-title {
+        font-size: 1.875rem;
+    }
+    .events .event-footer {
+        margin-top: 0;
+    }
 
-    
-    
-}
+
+
+    }

@@ -83,6 +83,19 @@
         right: -5rem;
         width: 80%;
     }
+    .events .event-footer {
+        margin-top: 0.25rem;
+    }
+
+    .events .event-title {
+        font-size: 2rem;
+    }
+    .events .event-sub, .events .location, .events .event-buy {
+        font-size: 1.25rem;
+    }
+    .events .on-sale {
+        font-size: 1rem;
+    }
 
 
 .shfooter .collapse {
