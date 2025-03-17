@@ -30,23 +30,40 @@ a.btn.btn-outline {
 section {
     overflow: hidden;
 }
-
 .section-title {
-    border: 3px solid var(--orange);
-    color: var(--white);
-    font-size: 2rem;
-    font-weight: 800;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.section-title .row .col {
     text-align: center;
-    text-transform: uppercase;
-    width: fit-content;
+}
+
+.section-title .borders {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section-title.title-lite .t-border:nth-child(1), .section-title.title-lite .t-border:nth-child(3)  {
+    border-bottom: thin solid var(--gray);
+    width: 40%;
+}
+.section-title.title-lite .t-border:nth-child(2)  {
+    border-bottom: thin solid var(--pink);
+    width: 15%;
+}
+.section-title.title-dark .t-border:nth-child(1), .section-title.title-dark .t-border:nth-child(3) {
+    border-color: var(--liteGray);
+}
+.section-title.title-lite h2 {
+    color: var(--black);
+}.section-title.title-dark h2 {
+    color: var(--white);
 }
 .section-title h2 {
-   margin-bottom: 0;
-   padding: 1.5rem 2.5rem;
-   font-size: 2.8rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0;
 }
 /*--------------------------------------------------------------
 # Top Bar
@@ -272,7 +289,6 @@ a.members-login:hover span {
 .hero {
     background-color: var(--orange);
     position: relative;
-    /*height: 26rem;*/
     overflow: hidden;
 }
 .hero .hero-img {
@@ -298,304 +314,100 @@ a.members-login:hover span {
     margin-bottom: 15rem;
 }
 
-/*--------------------------------------------------------------
-# About Us
---------------------------------------------------------------*/
-.about-us {
-   position: relative;
-}
-.about-us .about-bg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.hero .divider {
     position: absolute;
-    z-index: 1;
-}
-.about-us .about-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.92);
-    z-index: 2;
-}
-.about-us .container {
-    position: relative;
-    z-index: 3;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-.about-us .container p {
-    color: var(--white);
-    font-size: 1.125rem;
-}
-
-a.readmore {
-    color: var(--white);
-    font-size: 1.125rem;
-    margin-top: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all .3s;
-}
-a.readmore:hover {
-    color: var(--orange);
-    cursor: pointer;
-}
-.about-us .section-title {
-    margin-bottom: 3rem;
-}
-
-/*--------------------------------------------------------------
-# Key Features
---------------------------------------------------------------*/
-.key-features {
-    background-color: var(--orange);
-    position: relative;
-}
-.key-features-section-title {
-    position: relative;
-}
-.key-features-section-title .title-contain {
-    padding: 1.25rem 1rem;
-    background-color: var(--black);
-    margin-top: -2rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-transform: uppercase;
-    transform: translate(-50%, -50%);
-    z-index: 9;
-
-}
-
-.key-features-section-title h2 {
-    color: var(--white);
-    font-size: 1.4rem;
-    margin-bottom: 0;
-
-}
-.key-features-section-title img {
-    width: 100%;
-}
-
-.key-features .text-contain {
-    background-color: var(--white);
-    padding: 1rem;
-    position: relative;
-    z-index: 9;
-}
-
-.key-features .text-contain .title {
-    color: var(--white);
-    background-color: var(--black);
-    padding: .5rem;
-    margin-bottom: 1rem;
-    position: relative;
-    padding-left: 4rem;
-}
-.key-features .text-contain .title:not(:first-child) {
-    margin-top: 2rem;
-}
-
-.key-features .text-contain .title::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -0.75rem;
-    transform: translateY(-55%) rotate(-20deg);
-    width: 3.5rem;
-    height: 3.5rem;
-    background-color: var(--lightOrange);
-    z-index: 1;
-  }
-  
-  .key-features .text-contain .title::after {
-    content: attr(data-number);
-    position: absolute;
-    top: 50%;
-    left: 1.5rem;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-weight: bold;
-    z-index: 2;
-    font-size: 1.2rem; 
-  }
-.key-features .text-contain .title h3 {
-    font-size: 1rem;
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
-
-.key-features .text-contain li {
-    margin-bottom: .5rem;
-}
-.key-features .second {
-    position: relative;
-}
-.key-features .black-bg {
-    background-color: var(--black);
-    position: absolute;
-    height: 50%;
-    width: 100%;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 0;
-}
-.key-features .details {
-    position: relative;
-    z-index: 999;
-    padding-left: 1rem;
-}
-.key-features .details p {
-    color: var(--white);
-}
-.key-features .img-contain {
-    position: relative;
-    z-index: 1;
-    height: 100%;
     width: 100%;
+    z-index: 9999;
 }
-.key-features .img-contain img {
-    position: absolute;
-    right: 0;
-}
-.key-features .img-contain .shape {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    margin-left: -3rem;
-}
-
 /*--------------------------------------------------------------
-# Get In Touch
+# Landing Cards
 --------------------------------------------------------------*/
-.get-in-touch {
-    background-color: var(--black);
-    color: var(--white);
-    padding: 2rem 0;
-    text-align: center;
-}
-
-.get-in-touch .col {
-    background-color: var(--lightOrange);
-}
-.get-in-touch p {
-    font-size: 1.5rem;
-}
-
-/*--------------------------------------------------------------
-# Advertise
---------------------------------------------------------------*/
-.advertise {
+.landing-cards .card {
+    border-radius: 0;
+    border: none;
     position: relative;
-    height: fit-content;
 }
-.advertise img {
+.landing-cards .card .card-img {
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+}
+.landing-cards .card .card-img img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.landing-cards .card .card-img .overlay {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
     top: 0;
     right: 0;
     bottom: 0;
+    background-color: rgba(0, 0, 0, 0.48);
+    transition: all .3s;
+    z-index: 1;
+}
+.landing-cards .card .card-img .triangle {
+    position: absolute;
+    top: 0;
     left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    z-index: -9;
+    width: 4rem;
+    z-index: 2;
 }
-.advertise .section-title {
-    background-color: var(--black);
-    margin-bottom: 0;
-    margin-top: 4rem;
+.landing-cards .card .card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    z-index: 2;
 }
-.advertise  a.title-sub {
-    background-color: var(--orange);
-    border: 3px solid var(--orange);
-    border-top: none;
-    padding: .5rem 2rem;
-    margin-bottom: 8rem;
+.landing-cards .card .card-text h3 {
     color: var(--white);
-    font-weight: 400;
-    text-decoration: none;
     font-size: 2rem;
+    font-weight: 600;
+}
+.landing-cards .card .card-text h3 span {
     text-transform: uppercase;
-    transition: all .3s;
+    display: block;
+    font-size: 3rem;
 }
-.advertise  a.title-sub:hover {
-    background-color: var(--black);
-    cursor: pointer;
-}
-
-/*--------------------------------------------------------------
-# Other Services
---------------------------------------------------------------*/
-.other-services {
-    background-color: var(--black);
-
-}
-.other-services a.card img {
-    width: 100%;
-    border-left: 2px solid var(--black);
-    border-top: 2px solid var(--black);
-    border-right: 2px solid var(--black);
-    transition: all .3s;
-}
-.other-services a.card {
+.landing-cards a {
     text-decoration: none;
-    /* overflow: hidden; */
-    border: none;
-    border-radius: 0;
-    background-color: var(--black);
-    padding: 0;
-}
-.other-services .card-text.row {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-.other-services a.card .title {
-    background-color: var(--orange);
-    border-left: 2px solid var(--orange);
-    border-bottom: 2px solid var(--orange);
-    font-size: 1.25rem;
     color: var(--white);
+}
+.landing-cards a.card .card-btn {
+    margin-left: auto;
+    padding: .75rem 1.25rem;
     text-transform: uppercase;
     transition: all .3s;
 }
-.other-services a.card .more {
-    border-bottom: 2px solid var(--black);
-    border-right: 2px solid var(--black);
-    text-transform: uppercase;
-    color: var(--orange);
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    transition: all .3s;
+.landing-cards .col:nth-child(1) a.card .card-btn {
+    background-color: var(--blue);
 }
-.other-services a.card .more::before {
-    content: '»';
-    margin-right: .1rem;
+.landing-cards .col:nth-child(2) a.card .card-btn {
+    background-color: var(--orange);
+}
+.landing-cards .col:nth-child(3) a.card .card-btn {
+    background-color: var(--cyan);
+}
+.landing-cards a.card:hover .card-img .overlay {
+    /*background-color: rgba(255,255,255, .68);*/
+    background-color: rgba(0,0,0, 0.8);
+}
+.landing-cards .col a.card:hover .card-btn {
+    background-color: #000000;
 }
 
-.other-services a.card:hover .title {
-    background-color: var(--black);
-    /* color: var(--orange); */
-}
-.other-services a.card:hover .more {
-    color: var(--white);
-    border-right: 2px solid var(--orange);
-    border-bottom: 2px solid var(--orange);
-}
-.other-services a.card:hover img {
-    border-left: 2px solid var(--orange);
-    border-top: 2px solid var(--orange);
-    border-right: 2px solid var(--orange);
-    filter:blur(.5px);
-}
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+    /*--------------------------------------------------------------
+    # Footer
+    --------------------------------------------------------------*/
 footer {
     font-size: .875rem;
 }
