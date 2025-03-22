@@ -134,6 +134,11 @@
         width: 80%;
     }
 
+    .b-left {
+        border-left: thin solid var(--gray);
+        padding-left: 2rem;
+    }
+
 
 
 }
